@@ -57,7 +57,7 @@ I repeated my most reliable search, this time targeting the `region` folder:
 
 - **Search Attempt 3:** I searched the `region` folder for the **Value** `written_book`.
 
-![image![image-20250627190307803](https://github.com/user-attachments/assets/d01b57ef-0121-485f-96cd-2f2c29944481)
+![image-20250627190307803](https://github.com/user-attachments/assets/d01b57ef-0121-485f-96cd-2f2c29944481)
 
 **This search was successful.** NBTExplorer immediately located a `written_book` item nested inside a `minecraft:chest` block entity.
 
