@@ -21,8 +21,8 @@ We were given a single Minecraft world save folder for game version 1.21.4. The 
 >
 > **Flag format:** `CORN{.*}`
 
-![SCR-20250622-sono-2](/Users/tanjiazer/Pictures/Screenshots - MAC/SCR-20250622-sono-2.png)
-*The initial challenge description.*
+
+[SCR-20250622-sono-2](https://github.com/user-attachments/assets/cb0399bf-7800-409a-9db2-ff2a7f749bb4)
 
 ## Investigation
 
@@ -34,7 +34,7 @@ The first step was I did was to load the world in the correct Minecraft version 
 
 After some Googling, I proceeded to analyze the world files using **NBTExplorer**, a tool used for reading and editing Minecraft's NBT (Named Binary Tag) data.
 
-![image-20250627185847838](/Users/tanjiazer/Library/Application Support/typora-user-images/image-20250627185847838.png)
+![image-20250627185847838](https://github.com/user-attachments/assets/e7b8bbba-e791-4d0c-85c8-6e01010f5bbc)
 
 After opening the `My_First_Field` folder in NBTExplorer, I began a systematic search for the book.
 
