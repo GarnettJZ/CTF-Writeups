@@ -9,6 +9,12 @@ A walkthrough of the "My First Field" challenge, from initial analysis to flag r
 - **Category:** Miscellaneous
 - **Points:** Dynamic (500 initial, 50 final)
 
+## Challenge Files
+
+The Minecraft world save file used for this challenge can be downloaded here:
+[**Download My_First_Field.zip**](https://github.com/GarnettJZ/CTF-Writeups/releases/download/v1.0/My_First_Field.zip)
+
+
 ## Problem Description
 
 We were given a single Minecraft world save folder for game version 1.21.4. The prompt set the scene:
