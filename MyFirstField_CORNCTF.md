@@ -59,7 +59,7 @@ To test this hypothesis, I used NBTExplorer's search function (or`Ctrl+F`) on th
 
 These results proved that the book was not in the End.
 
-Therefor, the only remaining location for the book was the main Overworld, whose chunk data is stored in the `region` folder.
+Therefore, the only remaining location for the book was the main Overworld, whose chunk data is stored in the `region` folder.
 
 I repeated my most reliable search, this time targeting the `region` folder:
 
