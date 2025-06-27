@@ -22,7 +22,7 @@ We were given a single Minecraft world save folder for game version 1.21.4. The 
 > **Flag format:** `CORN{.*}`
 
 
-[SCR-20250622-sono-2](https://github.com/user-attachments/assets/cb0399bf-7800-409a-9db2-ff2a7f749bb4)
+![SCR-20250622-sono-2](https://github.com/user-attachments/assets/cb0399bf-7800-409a-9db2-ff2a7f749bb4)
 
 ## Investigation
 
@@ -34,11 +34,11 @@ The first step was I did was to load the world in the correct Minecraft version 
 
 After some Googling, I proceeded to analyze the world files using **NBTExplorer**, a tool used for reading and editing Minecraft's NBT (Named Binary Tag) data.
 
-![image-20250627185847838](https://github.com/user-attachments/assets/e7b8bbba-e791-4d0c-85c8-6e01010f5bbc)
+![image-20250627185847838](https://github.com/user-attachments/assets/1f4d51f8-c23d-416e-b89d-36e4d84de7d7)
 
 After opening the `My_First_Field` folder in NBTExplorer, I began a systematic search for the book.
 
-![image-20250627190010514](/Users/tanjiazer/Library/Application Support/typora-user-images/image-20250627190010514.png)
+![image-20250627190010514](https://github.com/user-attachments/assets/695b4f43-de8e-4d49-a34c-843ffe9573c7)
 
 1.  **Player Data Check:** I first inspected the `playerdata` folder. Expanding the file corresponding to the player's UUID confirmed that both the `Inventory` and `EnderItems` lists were empty.
 
@@ -57,12 +57,11 @@ I repeated my most reliable search, this time targeting the `region` folder:
 
 - **Search Attempt 3:** I searched the `region` folder for the **Value** `written_book`.
 
-![image-20250627190307803](/Users/tanjiazer/Library/Application Support/typora-user-images/image-20250627190307803.png)
+![image![image-20250627190307803](https://github.com/user-attachments/assets/d01b57ef-0121-485f-96cd-2f2c29944481)
 
 **This search was successful.** NBTExplorer immediately located a `written_book` item nested inside a `minecraft:chest` block entity.
 
-![image-20250627190508224](/Users/tanjiazer/Library/Application Support/typora-user-images/image-20250627190508224.png)
-**
+![image-20250627190508224](https://github.com/user-attachments/assets/4a2a139c-885a-4832-98d0-ec77f97b8346)
 
 ## Finding the Flag
 
@@ -70,7 +69,7 @@ The search result pinpointed the exact location of the item in the NBT tree. By 
 
 The chest contained exactly three items: two stacks of `minecraft:wheat` and one `minecraft:written_book` in slot 13. This discovery perfectly matched the story's description of "two pieces of wheat" and a book, confirming this was the target.
 
-![image-20250627190756486](/Users/tanjiazer/Library/Application Support/typora-user-images/image-20250627190756486.png)
+![image-20250627190756486](https://github.com/user-attachments/assets/97edf639-b3c8-421a-9450-1e87a1783b38)
 
 To finally read the flag, I had to expand the NBT data for the book itself. In modern Minecraft versions, specific item data (like a book's text) is stored within the `components` tag. The exact path to the flag was:
 
@@ -80,7 +79,7 @@ items` -> `(entry for Slot 13)` -> `components` -> `minecraft:written_book_conte
 
 Expanding the `pages` tag revealed the text written in the book, which contained the flag.
 
-![image-20250627190845583](/Users/tanjiazer/Library/Application Support/typora-user-images/image-20250627190845583.png)
+![image-20250627190845583](https://github.com/user-attachments/assets/6332b603-7301-40f9-a10c-748675adebff)
 
 The text inside the book's `pages` tag revealed the final flag:
 
