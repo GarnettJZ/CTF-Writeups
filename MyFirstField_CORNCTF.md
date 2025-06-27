@@ -27,7 +27,6 @@ We were given a single Minecraft world save folder for game version 1.21.4. The 
 >
 > **Flag format:** `CORN{.*}`
 
-
 ![SCR-20250622-sono-2](https://github.com/user-attachments/assets/cb0399bf-7800-409a-9db2-ff2a7f749bb4)
 
 ## Investigation
@@ -35,6 +34,9 @@ We were given a single Minecraft world save folder for game version 1.21.4. The 
 ### Initial In-Game Analysis
 
 The first step was I did was to load the world in the correct Minecraft version (`1.21.4`). Upon entering, I found myself in a massive superflat world composed entirely of farmland blocks, with some Slimes around. My player inventory was empty, there was nothing given at all. The world was in Hardcore mode, and the infinite size of the world made it clear that finding a single book through manual exploration was not a feasible strategy. This strongly suggested that the challenge was not about in-game discovery but about file forensics.
+
+![Screenshot 2025-06-27 at 7 41 30 PM](https://github.com/user-attachments/assets/1910c212-ec9d-40fc-82fe-f2c237927a38)
+![SCR-20250627-rdca](https://github.com/user-attachments/assets/1b4c2bb7-4cd7-4e54-b9a5-c88a32c37b36)
 
 ### Forensic Analysis with NBTExplorer
 
